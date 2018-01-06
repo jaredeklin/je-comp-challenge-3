@@ -5,16 +5,16 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <header>
-    <button class="header-buttons">a</button>
+  <section class="nav-bar">
+    <button class="nav-bar-buttons">a</button>
     <input type="search" name="search bar" class="search-bar" placeholder="Search for a job, task or resume">
-    <button class="header-buttons">b</button>
-    <button class="header-buttons">c</button>
-    <button class="header-buttons">d</button>
-  </header>
+    <button class="nav-bar-buttons">b</button>
+    <button class="nav-bar-buttons">c</button>
+    <button class="nav-bar-buttons">d</button>
+  </section>
   <section class="side-bar">
     Jared Eklin
-    <hr>
+    <hr class="side-bar-hr">
     <ul>Main
       <li>HOME</li>
       <li>JOBS</li>
@@ -22,7 +22,7 @@
       <li>TASKS</li>
       <li>CALENDAR</li>
     </ul>
-    <hr>
+    <hr class="side-bar-hr">
     <ul>Admin
       <li>USERS</li>
       <li>LOCATIONS</li>
@@ -30,7 +30,7 @@
       <li>JOB BOARDS</li>
       <li>SOCIAL</li>
     </ul>
-    <hr>
+    <hr class="side-bar-hr">
     <ul>Categories
       <li>Administrative</li>
       <li>Design</li>
@@ -38,9 +38,33 @@
       <li>Human Resources</li> 
     </ul>
   </section>
+  <header>
+    <h1>Customer Service Representative</h1>
+    San Francisco, CA  ·  <span class="preview">Preview this post</span>
+    <div class="header-buttons">
+    <button class="open-button"><img src="images/circle.svg"> OPEN</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    </div>
+    <ul>
+      <li>SUMMARY</li>
+      <li>APPLICANTS</li>
+      <li>JOB BOARD</li>
+      <li>INTERVIEWS</li>
+      <li>ACTIVITY</li>
+      <li>BROADCAST</li>
+      <li>NOTIFICATIONS</li>
+    </ul>
+  </header>
+  <section class="graph-section">
+    <img src="images/graph.png" alt="graph of applicants per day" class="graph-img">
+    <hr>
+  </section>
   <section class="job-description">
-    <article class="job-description-header">JOB DESCRIPTION
-      <button class="edit-job-description">EDIT</button></article>
+    <div class="job-description-header">
+      <article class="job-description-titles">JOB DESCRIPTION</article><button class="edit-job-description-btn">EDIT</button>
+    </div>
       <article class="job-description-titles">POSITION TITLE</article>
       <article class="job-description-body">Customer Service Representative</article>
       <hr>
@@ -57,7 +81,7 @@
       <article class="job-description-body">Open</article>
       <hr>
       <article class="job-description-titles">DESCRIPTION</article>
-      <textarea class="job-description-body description">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on all the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</textarea>
+      <article class="job-description-body description">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on all the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</article>
       <hr>
       <article class="job-description-titles">HIRING LEAD</article>
       <article class="job-description-body">Tommy Tizzy</article>
@@ -73,11 +97,13 @@
       <h5>Link to this Job</h5>
       <p>Lorum ipsum dolor sit amet, consectetur adipis cling elit. Integer molis neque ege vestipend.</p>
       <input type="text" name="copy job link" placeholder="http://loremipsum.dol/sit.amet..."><button class="copy-button">Copy</button>
+      <hr>
     </article>
     <article class="media-links">
       <h5>Use the Button Widget</h5>
       <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
       <input type="text" name="copy job link" placeholder='<script type="text/javascript" src=script.js'><button class="copy-button">Copy</button>
+      <hr>
     </article>
     <article class="media-links">
       <h5>Upload Resumes by Email</h5>
