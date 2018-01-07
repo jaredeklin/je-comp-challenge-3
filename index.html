@@ -3,35 +3,39 @@
 <head>
   <title>Oh snaps!</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://use.fontawesome.com/91c9c5f959.js"></script>
 </head>
 <body>
   <section class="nav-bar">
-    <button class="nav-bar-buttons">a</button>
-    <input type="search" name="search bar" class="search-bar" placeholder="Search for a job, task or resume">
-    <button class="nav-bar-buttons">b</button>
-    <button class="nav-bar-buttons">c</button>
-    <button class="nav-bar-buttons">d</button>
+    <button class="nav-bar-buttons"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <input type="search" name="search bar" class="search-bar" placeholder='Search for a job, task or resume'>
+    <button class="nav-bar-buttons"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+    <button class="nav-bar-buttons"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+</button>
+    <button class="nav-bar-buttons"><i class="fa fa-th" aria-hidden="true"></i>
+</button>
   </section>
   <section class="side-bar">
-    Jared Eklin
+    <img src="images/headshot.jpg" class="headshot">
+    <p class="name">Newton Barley</p>
     <hr class="side-bar-hr">
-    <ul>Main
-      <li>HOME</li>
-      <li>JOBS</li>
-      <li>RESUMES</li>
-      <li>TASKS</li>
-      <li>CALENDAR</li>
+    <ul><h6>Main</h6>
+      <li><i class="fa fa-home" aria-hidden="true"></i>HOME</li>
+      <li><i class="fa fa-briefcase" aria-hidden="true"></i>JOBS</li>
+      <li><i class="fa fa-file-text" aria-hidden="true"></i>RESUMES</li>
+      <li><i class="fa fa-tasks" aria-hidden="true"></i>TASKS</li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i>CALENDAR</li>
     </ul>
     <hr class="side-bar-hr">
-    <ul>Admin
-      <li>USERS</li>
-      <li>LOCATIONS</li>
-      <li>WORKFLOWS</li>
-      <li>JOB BOARDS</li>
-      <li>SOCIAL</li>
+    <ul><h6>Admin</h6>
+      <li><i class="fa fa-users" aria-hidden="true"></i>USERS</li>
+      <li><i class="fa fa-map-marker" aria-hidden="true"></i>LOCATIONS</li>
+      <li><i class="fa fa-level-down" aria-hidden="true"></i>WORKFLOWS</li>
+      <li><i class="fa fa-newspaper-o" aria-hidden="true"></i>JOB BOARDS</li>
+      <li><i class="fa fa-share-alt" aria-hidden="true"></i>SOCIAL</li>
     </ul>
     <hr class="side-bar-hr">
-    <ul>Categories
+    <ul><h6>Categories</h6>
       <li>Administrative</li>
       <li>Design</li>
       <li>Executive</li>
@@ -39,13 +43,17 @@
     </ul>
   </section>
   <header>
-    <h1>Customer Service Representative</h1>
+    <h1>Customer Service Representative</h1><i class="fa fa-map-marker" aria-hidden="true"></i>
+
     San Francisco, CA  ·  <span class="preview">Preview this post</span>
     <div class="header-buttons">
     <button class="open-button"><img src="images/circle.svg"> OPEN</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
+    <button><i class="fa fa-bookmark" aria-hidden="true"></i>
+</button>
+    <button><i class="fa fa-pencil" aria-hidden="true"></i>
+</button>
+    <button><i class="fa fa-trash" aria-hidden="true"></i>
+</button>
     </div>
     <ul>
       <li>SUMMARY</li>
@@ -58,12 +66,16 @@
     </ul>
   </header>
   <section class="graph-section">
+    <article class="chart-section">
+
+    </article>
     <img src="images/graph.png" alt="graph of applicants per day" class="graph-img">
     <hr>
   </section>
   <section class="job-description">
     <div class="job-description-header">
-      <article class="job-description-titles">JOB DESCRIPTION</article><button class="edit-job-description-btn">EDIT</button>
+      <article class="job-description-titles">JOB DESCRIPTION</article><button class="edit-job-description-btn"><i class="fa fa-pencil" aria-hidden="true"></i>
+EDIT</button>
     </div>
       <article class="job-description-titles">POSITION TITLE</article>
       <article class="job-description-body">Customer Service Representative</article>
@@ -75,7 +87,7 @@
       <article class="job-description-body">Full-time</article>
       <hr>
       <article class="job-description-titles">EXPERIENCE</article>
-      <article class="job-description-body">None Representative</article>
+      <article class="job-description-body">None</article>
       <hr>
       <article class="job-description-titles">STATUS</article>
       <article class="job-description-body">Open</article>
@@ -84,7 +96,7 @@
       <article class="job-description-body description">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on all the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</article>
       <hr>
       <article class="job-description-titles">HIRING LEAD</article>
-      <article class="job-description-body">Tommy Tizzy</article>
+      <article class="job-description-body"><img src="images/tommy-headshot.jpg">Tommy Tizzy</article>
       <hr>
       <article class="job-description-titles">APPROVED SALARY</article>
       <article class="job-description-body">$1,000,000</article>
@@ -94,21 +106,21 @@
     <button class="social-media-buttons twitter">Tweet this Job</button>
     <button class="social-media-buttons linkedin">Post to Linkedin</button>
     <article class="media-links">
-      <h5>Link to this Job</h5>
+      <h5><i class="fa fa-globe media-area-icon" aria-hidden="true"></i>Link to this Job</h5>
       <p>Lorum ipsum dolor sit amet, consectetur adipis cling elit. Integer molis neque ege vestipend.</p>
       <input type="text" name="copy job link" placeholder="http://loremipsum.dol/sit.amet..."><button class="copy-button">Copy</button>
       <hr>
     </article>
     <article class="media-links">
-      <h5>Use the Button Widget</h5>
+      <h5><i class="fa fa-camera-retro media-area-icon" aria-hidden="true"></i>Use the Button Widget</h5>
       <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
-      <input type="text" name="copy job link" placeholder='<script type="text/javascript" src=script.js'><button class="copy-button">Copy</button>
+      <div class="link-copy-area"><input type="text" name="copy job link" placeholder='<script type="text/javascript" src=script.js'><button class="copy-button">Copy</button></div>
       <hr>
     </article>
     <article class="media-links">
-      <h5>Upload Resumes by Email</h5>
+      <h5><i class="fa fa-paper-plane media-area-icon" aria-hidden="true"></i>Upload Resumes by Email</h5>
       <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-      <input type="text" name="email resumes" placeholder="tommytizzy@gmail.com">
+      <input id="email-input" type="text" name="email resumes" placeholder="tommytizzy@gmail.com">
     </article>    
   </section>
 
