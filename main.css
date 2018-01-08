@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+
 
 html {
   background-color: #EDF2F6;
@@ -57,8 +60,10 @@ header ul {
 
 header li {
   display: flex;
-  margin: 0 20px 0 0;
+  margin: 0 4% 0 0;
   height: 30px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 header li:hover {
@@ -99,6 +104,10 @@ h6 {
 
 }
 
+svg {
+  width: 32%;
+  margin: -35px 0;
+}
 
 .open-button {
   border-radius: 20px;
@@ -168,6 +177,7 @@ h6 {
   padding: 6px 0 0 20px;
   height: 25px;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .side-bar li:hover {
@@ -180,7 +190,7 @@ h6 {
  li .fa {
   height: 15px;
   width: 15px;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .side-bar {
@@ -239,16 +249,70 @@ h6 {
 .graph-section {
   grid-column: 2 / 4;
   grid-row: 4;
-  margin: 50px 50px 0 50px;
+  margin: 35px 50px 0 50px;
+  /*display: flex;*/
+}
+
+.chart-area {
+  width: 55%;
+  height: 100%;
+  display: inline-block;
+}
+
+.chart-text {
+  font: 1em;
+  /*fill: #7D8A9E;*/
+  transform: translateY(0.25em);
 
 }
 
+.chart-number {
+  font-size: .5em;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-0.25em);
+  fill: #374050;
+}
 
+.chart-label {
+  font-size: .2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  transform: translateY(0.3em);
+  fill: #7D8A9E;
+}
+
+.totals-button {
+  display: block;
+  margin: auto;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #D3DAE1;
+  color: #374050;
+  /*font-weight: bold;*/
+}
+
+.bar-graph-area {
+/*  display: flex;
+  justify-content: flex-end;*/
+  width: 45%;
+  height: 100%;
+  float: right;
+  clear: both;
+}
 .graph-img {
   height: 200px;
-  width: 400px;
-  /*float: right;*/
-  /*dis*/
+  width: 100%;
+}
+
+.applicants-button {
+  display: block;
+  margin: auto;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid #D3DAE1;
+  color: #374050;
+  /*font-weight: bold;*/
 }
 
 .job-description {
