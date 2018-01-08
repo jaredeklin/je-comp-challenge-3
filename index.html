@@ -3,6 +3,7 @@
 <head>
   <title>Oh snaps!</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/91c9c5f959.js"></script>
 </head>
 <body>
@@ -17,7 +18,8 @@
   </section>
   <section class="side-bar">
     <img src="images/headshot.jpg" class="headshot">
-    <p class="name">Newton Barley</p>
+    <p class="name">Newton Barley <i class="fa fa-angle-down" aria-hidden="true"></i>
+</p>
     <hr class="side-bar-hr">
     <ul><h6>Main</h6>
       <li><i class="fa fa-home" aria-hidden="true"></i>HOME</li>
@@ -44,16 +46,12 @@
   </section>
   <header>
     <h1>Customer Service Representative</h1><i class="fa fa-map-marker" aria-hidden="true"></i>
-
     San Francisco, CA  ·  <span class="preview">Preview this post</span>
     <div class="header-buttons">
     <button class="open-button"><img src="images/circle.svg"> OPEN</button>
-    <button><i class="fa fa-bookmark" aria-hidden="true"></i>
-</button>
-    <button><i class="fa fa-pencil" aria-hidden="true"></i>
-</button>
-    <button><i class="fa fa-trash" aria-hidden="true"></i>
-</button>
+    <button><i class="fa fa-bookmark" aria-hidden="true"></i></button>
+    <button><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    <button><i class="fa fa-trash" aria-hidden="true"></i></button>
     </div>
     <ul>
       <li>SUMMARY</li>
@@ -66,10 +64,50 @@
     </ul>
   </header>
   <section class="graph-section">
-    <article class="chart-section">
+    <article class="chart-area">
 
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#EDF2F6"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#66B8BF" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="75"></circle>
+
+        <g class="chart-text">
+          <text x="50%" y="50%" class="chart-number">3,154</text>
+          <text x="50%" y="50%" class="chart-label">Applicants
+          </text>
+        </g>
+      </svg>
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#EDF2F6"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#45A4F3" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="75"></circle>
+
+        <g class="chart-text">
+          <text x="50%" y="50%" class="chart-number">1,546</text>
+          <text x="50%" y="50%" class="chart-label">Interviews
+          </text>
+        </g>
+      </svg>
+      <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#EDF2F6"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#A46EAB" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="75"></circle>
+
+        <g class="chart-text">
+          <text x="50%" y="50%" class="chart-number">912</text>
+          <text x="50%" y="50%" class="chart-label">Forwards
+          </text>
+        </g>
+      </svg>
+      <button class="totals-button">TOTALS · Out of <b>5,231</b> views</button>
     </article>
+    <article class="bar-graph-area">
     <img src="images/graph.png" alt="graph of applicants per day" class="graph-img">
+    <button class="applicants-button">APPLICANTS/DAY</button>
+    </article>
     <hr>
   </section>
   <section class="job-description">
