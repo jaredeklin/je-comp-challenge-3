@@ -175,6 +175,7 @@ svg {
 .side-bar li {
   color: #7D8A9E;
   padding: 6px 0 0 20px;
+  margin-bottom: 10px;
   height: 25px;
   font-size: 14px;
   font-weight: 700;
@@ -207,6 +208,7 @@ svg {
 
 .side-bar-hr {
   background-color: #313947;
+  margin-top: 20px;
 }
 
 .headshot {
@@ -289,12 +291,11 @@ svg {
   border-radius: 15px;
   border: 2px solid #D3DAE1;
   color: #374050;
-  /*font-weight: bold;*/
+  padding-top: 3px;
+  width: 180px;
 }
 
 .bar-graph-area {
-/*  display: flex;
-  justify-content: flex-end;*/
   width: 45%;
   height: 100%;
   float: right;
@@ -312,7 +313,8 @@ svg {
   border-radius: 15px;
   border: 2px solid #D3DAE1;
   color: #374050;
-  /*font-weight: bold;*/
+  padding-top: 3px;
+  width: 125px;
 }
 
 .job-description {
@@ -327,7 +329,8 @@ svg {
 .job-description-header {
   background-color: #717E93;
   color: #FFF;
-  height: 50px;
+  height: 75px;
+  padding-top: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -335,6 +338,7 @@ svg {
 .job-description-titles {
   padding: 15px;
   width: 200px;
+  font-weight: 700;
   display: inline-block;
 }
 
@@ -357,6 +361,10 @@ svg {
  background-color: #7E8BA4;
  border: none;
  color: #FFF;
+ height: 36px;
+ width: 70px;
+ font-size: 16px
+ padding-top: 5px;
 }
 
 .description {
@@ -389,7 +397,7 @@ svg {
   display: block;
   width: 100%;
   height: 40px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   color: #FFF;
   background-repeat: no-repeat;
   background-position: 20px;
