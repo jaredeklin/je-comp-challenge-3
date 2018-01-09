@@ -12,8 +12,8 @@ body {
   color: #7D8A9E;
   display: grid;
   width: 100%;
-  grid-template-columns: 15% 55% auto;
-  grid-template-rows: 80px 100px 100px 300px auto;
+  grid-template-columns: 16% 55% auto;
+  grid-template-rows: 80px 100px 100px 300px 920px;
   grid-template-areas: 
     "side-bar nav-bar nav-bar"
     "side-bar header header"
@@ -67,10 +67,6 @@ header li:hover {
   color: #374050;
   border-bottom: 3px solid #45A4F3; 
 }
-
-/*header li .fa {
-  display: none;
-}*/
 
 header button {
   border-radius: 50%;
@@ -184,7 +180,7 @@ svg {
   padding: 6px 0 0 20px;
   margin-bottom: 10px;
   height: 25px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -202,7 +198,7 @@ svg {
 }
 
 .side-bar {
-  min-width: 120px;
+  /*min-width: 120px;*/
   grid-column: 1;
   grid-row: 1 / 6;
   background-color: #374050;
@@ -215,6 +211,22 @@ svg {
 .side-bar-hr {
   background-color: #313947;
   margin-top: 20px;
+}
+
+.yellow {
+  color: #FAD549;
+}
+
+.red {
+  color: #D73763;
+}
+
+.blue {
+  color: #51AFF8;
+}
+
+.green {
+  color: #49A68B;
 }
 
 .headshot {
@@ -325,6 +337,7 @@ svg {
   color: #7D8A9E;
   background-color: #FFF;
   border-radius: 5px;
+  max-height: 800px;
 }
 
 .job-description hr {
@@ -440,7 +453,6 @@ svg {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border: none;
-  /*border-left: 0;*/
 }
 
 .media-area-icon {
@@ -452,11 +464,12 @@ svg {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 1026px){
+
+@media screen and (max-width: 1040px){
 
   body{
     grid-template-columns: 20% 55% auto;
-    grid-template-rows: 80px 100px 92px 300px auto auto;
+    grid-template-rows: 80px 100px 92px 300px auto 450px;
   }
   
   h1 {
@@ -464,8 +477,7 @@ svg {
   }
 
   h5 {
-    margin-top: 0;
-    font-size: 12px;
+    margin-top: 10px;
   }
 
   header li {
@@ -520,29 +532,24 @@ svg {
   .social-media-buttons {
     width: 33%;
   }
+
   .social-media-area {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
-  .links-area {
-    display: flex;
-    width: 100%
+  .media-links {
+    width: 100%;
   }
 
-  .media-links {
-    justify-content: space-between;
-    width: 33%;
-    margin-right: 5px;
-  }
 }
 
 
 @media screen and (max-width: 900px){
 
   body {
-    grid-template-rows: 65px 100px 100px 300px auto auto;
+    grid-template-rows: 65px 100px 100px 300px 925px 450px;
   }
 
   header {
@@ -558,13 +565,12 @@ svg {
     margin-right: 3%;
   }
 
-  .hide-info {
-    display: none;
-  }
-
-
   h6 {
     padding-left: 10px;
+  }
+
+  .hide-info {
+    display: none;
   }
 
   .side-bar li {
@@ -590,10 +596,92 @@ svg {
     margin-right: 30px;
   }
 
+  .job-description {
+    max-height: 840px;
+  }
+
   .description {
     width: 52%;
   }
 
+
+
+}
+
+@media screen and (max-width: 720px){
+
+  body {
+    grid-template-columns: 22% 55% auto;
+    grid-template-rows: 65px 100px 100px 500px 1100px 560px;
+  }
+
+  h5 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .job-description {
+    max-height: 1000px;
+  }
+
+  .job-description-header article {
+    display: inline-block;
+    width: 200px;
+  }
+
+  .job-description-hr {
+    margin: 5px 15px;
+  }
+
+  .job-description-body {
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .social-media-area {
+    display: block;
+  }
+
+  .social-media-buttons {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .links-area {
+    display: block;
+  }
+
+  .media-links {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .media-section p {
+    font-size: 12px;
+  }
+
+  .hide-info-2 {
+    display: none;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .chart-area {
+    width: unset;
+    height: 50%
+  }
+
+  .bar-graph-area {
+    float: none;
+    width: unset;
+  }
 }
 
 
@@ -601,7 +689,7 @@ svg {
   
   body {
     grid-template-columns: 20% 80%;
-    grid-template-rows: 50px auto 500px auto auto auto;
+    grid-template-rows: 50px auto 500px 985px auto 400px;
   }
 
   h1 {
@@ -633,16 +721,12 @@ svg {
     font-size: 12px;
   }
 
-  .hide-info-2 {
-    display: none;
-  }
-
   .graph-section {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
   }
 
-  .chart-area {
+/*  .chart-area {
     width: unset;
     height: 50%
   }
@@ -650,7 +734,7 @@ svg {
   .bar-graph-area {
     float: none;
     width: unset;
-  }
+  }*/
 
   .job-description {
     grid-column: 1 / 3;
@@ -658,12 +742,13 @@ svg {
     font-size: 12px;
   }
 
+
   .job-description-header article {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 150px;
   }
 
-  .job-description-hr {
+/*  .job-description-hr {
     margin: 5px 15px;
   }
 
@@ -675,14 +760,15 @@ svg {
 
   .description {
     width: 90%;
-  }
+  }*/
 
   .media-section {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
+    margin-bottom: 20px;
   }
 
-  .social-media-area {
+  /*.social-media-area {
     display: block;
   }
 
@@ -698,7 +784,7 @@ svg {
   .media-links {
     width: 100%;
     margin-right: 0;
-  }
+  }*/
 
   h5 {
     margin-top: 15px;
@@ -716,6 +802,7 @@ svg {
   .side-bar {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
+    max-height: 400px;
   }
 
   .side-bar ul {
