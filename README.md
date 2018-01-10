@@ -17,7 +17,7 @@ Icons.
 Color palette, but ONLY if you select a complementary palette. We highly encourage you to visit sites like: material palette or coolors or color-hex
 
 Original Image
-![alt text](https://github.com/jaredeklin/je-comp-challenge-3/blob/master/images/original-screen-sho.png "Original Design")
+![alt text](https://github.com/jaredeklin/je-comp-challenge-3/blob/master/images/original-screen-shot.png "Original Design")
 
 
 My Design
