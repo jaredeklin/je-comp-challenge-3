@@ -14,12 +14,6 @@ body {
   width: 100%;
   grid-template-columns: 16% 55% auto;
   grid-template-rows: 80px 100px 100px 300px 850px;
-  grid-template-areas: 
-    "side-bar nav-bar nav-bar"
-    "side-bar header header"
-    "side-bar header header"
-    "side-bar graph-section graph-section"
-    "side-bar job-description media-section"
 }
 
 hr {
@@ -109,6 +103,12 @@ svg {
   margin: -35px 0 -30px 0;
 }
 
+li .fa {
+  height: 15px;
+  width: 15px;
+  margin-right: 12px;
+}
+
 .more-info {
   display: none;
 }
@@ -192,14 +192,7 @@ svg {
   color: #FFF;
 }
 
- li .fa {
-  height: 15px;
-  width: 15px;
-  margin-right: 12px;
-}
-
 .side-bar {
-  /*min-width: 120px;*/
   grid-column: 1;
   grid-row: 1 / 6;
   background-color: #374050;
@@ -214,19 +207,19 @@ svg {
   margin-top: 20px;
 }
 
-.yellow {
+.yellow-box {
   color: #FAD549;
 }
 
-.red {
+.red-box {
   color: #D73763;
 }
 
-.blue {
+.blue-box {
   color: #51AFF8;
 }
 
-.green {
+.green-box {
   color: #49A68B;
 }
 
@@ -303,7 +296,8 @@ svg {
   fill: #7D8A9E;
 }
 
-.totals-button {
+.totals-button,
+.applicants-button {
   display: block;
   margin: auto;
   height: 30px;
@@ -311,7 +305,14 @@ svg {
   border: 2px solid #D3DAE1;
   color: #374050;
   padding-top: 3px;
+}
+
+.totals-button {
   width: 200px;
+}
+
+.applicants-button {
+  width: 140px;
 }
 
 .bar-graph-area {
@@ -323,17 +324,6 @@ svg {
 .graph-img {
   height: 200px;
   width: 100%;
-}
-
-.applicants-button {
-  display: block;
-  margin: auto;
-  height: 30px;
-  border-radius: 15px;
-  border: 2px solid #D3DAE1;
-  color: #374050;
-  padding-top: 3px;
-  width: 140px;
 }
 
 .down-arrow-border {
@@ -422,7 +412,6 @@ svg {
   margin: 50px;
   grid-column: 3;
   grid-row: 5 / 6;
-
 }
 
 .media-section input{
@@ -456,8 +445,7 @@ svg {
 
 .facebook {
   background-color: #4F71BC;
-  background-image: url(images/facebook.svg);
-  
+  background-image: url(images/facebook.svg);  
 }
 
 .twitter {
@@ -589,10 +577,6 @@ svg {
     margin-top: 22px;
   }
 
-/*  header li {
-    margin-right: 3%;
-  }*/
-
   h6 {
     padding-left: 10px;
   }
@@ -632,6 +616,7 @@ svg {
     width: 52%;
   }
 }
+
 
 @media screen and (max-width: 720px){
 
@@ -726,6 +711,33 @@ svg {
     margin-bottom: 5px;
   }
 
+  h5 {
+    margin-top: 15px;
+  }
+
+  h6 {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 20px;
+  }
+
+  h6 .fa {
+    display: unset;
+  }
+
+  header {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    width: 100%;
+    padding-top: 25px;
+    font-size: 12px;
+  }
+
+  header li {
+    font-size: 12px;
+    margin-right: 9%;
+  }
+
   .nav-bar {
     grid-column: 1 / 23;
     grid-row: 1;
@@ -740,19 +752,6 @@ svg {
   .search-bar {
     background-position-x: 15px;
     padding-left: 50px;
-  }
-
-  header {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    width: 100%;
-    padding-top: 25px;
-    font-size: 12px;
-  }
-
-  header li {
-    font-size: 12px;
-    margin-right: 9%;
   }
 
   .graph-section {
@@ -779,20 +778,6 @@ svg {
     grid-column: 1 / 3;
     grid-row: 6 / 7;
     margin-bottom: 20px;
-  }
-
-  h5 {
-    margin-top: 15px;
-  }
-
-  h6 {
-    font-size: 14px;
-    padding-left: 30px;
-    margin-top: 20px;
-  }
-
-  h6 .fa {
-    display: unset;
   }
 
   .side-bar {
@@ -825,13 +810,4 @@ svg {
     margin: 20px auto;
   }
 }
-
-
-
-
-
-
-
-
-
 
