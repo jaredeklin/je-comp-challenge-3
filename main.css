@@ -679,7 +679,7 @@ li .fa {
   }
 
   .chart-area {
-    height: 50%
+    height: 50%;
     width: unset;
   }
 
@@ -742,7 +742,9 @@ li .fa {
 
   .search-bar {
     background-position-x: 15px;
-    padding-left: 50px;
+    background-size: 18px;
+    font-size: 14px;
+    padding: 20px 0px 20px 50px;
   }
 
   .graph-section {
