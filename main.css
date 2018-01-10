@@ -729,6 +729,14 @@ li .fa {
     margin-right: 9%;
   }
 
+  header button {
+    font-size: 15px;
+  }
+
+  .open-button {
+    position: unset;
+  }
+
   .nav-bar {
     grid-column: 1 / 23;
     grid-row: 1;
@@ -737,12 +745,12 @@ li .fa {
   }
 
   .nav-bar-buttons {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .search-bar {
     background-position-x: 15px;
-    background-size: 18px;
+    background-size: 15px;
     font-size: 14px;
     padding: 20px 0px 20px 50px;
   }
